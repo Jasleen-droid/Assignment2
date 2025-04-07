@@ -1,0 +1,197 @@
+/* Normalize CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-top: 20px;
+    color: #eb5e2f;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 0.9em;
+    color: #666;
+}
+
+/* Main Content */
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+/* Left Column (Aside Content) */
+.left {
+    flex: 0 0 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Right Column (Main Content) */
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Section Styling */
+section {
+    flex: 1 1 30%;
+    padding: 10px;
+    border-top: 12px solid;
+    margin-bottom: 20px;
+}
+
+section:nth-of-type(1) {
+    border-color: #4CAF50;
+}
+
+section:nth-of-type(2) {
+    border-color: #E91E63;
+}
+
+section:nth-of-type(3) {
+    border-color: #00BCD4;
+}
+
+section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+section ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+section li {
+    margin-bottom: 15px;
+}
+
+section li h3 {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+section li p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+section li strong {
+    color: #D50000;
+}
+
+/* Aside Styling */
+aside {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+aside figure {
+    position: relative;
+    text-align: center;
+}
+
+aside img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+aside figcaption {
+    font-size: 0.8em;
+    color: #555;
+}
+
+aside:nth-of-type(2) {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+aside:nth-of-type(2) h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+aside:nth-of-type(2) ol {
+    list-style: none;
+    padding-left: 0;
+}
+
+aside:nth-of-type(2) li {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 0.8em;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .left, 
+    .right {
+        width: 100%;
+    }
+
+    section,
+    aside {
+        flex: 1 1 100%;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    section h2 {
+        font-size: 1.2em;
+    }
+}
